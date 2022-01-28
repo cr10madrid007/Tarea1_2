@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tarea1_2.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="TAREA 1.2" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Entry Keyboard="Text"
+                Placeholder="Ingrese Su Nombre"
+                VerticalOptions="CenterAndExpand" x:Name="txtNombre" />
+
+        <Entry Keyboard="Text"
+                Placeholder="Ingrese Su Apellido"
+                VerticalOptions="CenterAndExpand" x:Name="txtApellido"/>
+
+        <Entry Keyboard="Numeric"
+                Placeholder="Ingrese Su Edad"
+                VerticalOptions="CenterAndExpand" x:Name="txtEdad" />
+
+        <Entry Keyboard="Email"
+                Placeholder="Ingrese Su Correo"
+                VerticalOptions="CenterAndExpand" x:Name="txtCorreo"/>
+        
+        <Button Text="Enviar" x:Name="btnEnviar" Clicked="btnEnviar_Clicked"/>
+    </StackLayout>
+
+</ContentPage>
